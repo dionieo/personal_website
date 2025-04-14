@@ -35,3 +35,14 @@ document.querySelectorAll(".sidebar-toggler, .sidebar-menu-button").forEach((but
 
 // Collapse sidebar by default on small screens
 if (window.innerWidth <= 1024) document.querySelector(".sidebar").classList.add("collapsed");
+
+// Enable horizontal scrolling with vertical scroll input
+document.addEventListener('wheel', (event) => {
+  if (event.deltaY !== 0) {
+    event.preventDefault(); // Prevent default vertical scrolling
+    window.scrollBy({
+      left: event.deltaY, // Scroll horizontally based on vertical scroll input
+      behavior: 'smooth', // Optional: Smooth scrolling effect
+    });
+  }
+});

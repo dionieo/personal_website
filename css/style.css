@@ -11,6 +11,7 @@
 body {
   min-height: 100vh;
   background: linear-gradient(#F1F3FF, #CBD4FF);
+  overflow-y: hidden;
 }
 
 .sidebar {
@@ -251,8 +252,8 @@ body {
 }
 
 .content-wrapper{
-    margin-left: 270px;
-    transition: all 0.4s ease;
+  margin-left: 270px;
+  transition: all 0.4s ease;
 }
 
 .contentinnerwrapper{
@@ -260,17 +261,18 @@ body {
 }
 
 .content-wrapper {
-    margin-left: 270px;
-    transition: all 0.4s ease;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Disable vertical scrolling */
-    white-space: nowrap; /* Prevent content from wrapping */
-    height: 100vh; /* Ensure the container takes the full viewport height */
-    box-sizing: border-box; /* Include padding and borders in height calculation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+  width: 500vw;
+  align-items: center;
+  justify-content: start;
 }
 
 .contentinnerwrapper {
-    display: inline-block; /* Ensure child elements align horizontally */
-    width: 200%; /* Make the content wider than the container to enable scrolling */
-    height: 100%; /* Match the height of the parent container */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background for better visibility */
+  padding: 20px; /* Optional: Add some padding */
 }
