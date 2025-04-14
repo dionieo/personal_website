@@ -284,7 +284,7 @@ body {
 .bento-container {
   display: grid;
   grid-template-rows: 2fr 1fr; /* Top section takes 2x height of bottom */
-  grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+  grid-template-columns: 1fr 1fr; /* 3 equal columns */
   gap: 20px; /* Add spacing between boxes */
   width: 100vw;
   height: 100vh;
@@ -295,10 +295,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc; /* Optional: Add a border for visibility */
   padding: 20px;
   text-align: center;
-  background-color: #f9f9f9; /* Optional: Background color */
+  background-color: #fff; /* Optional: Background color */
 }
 
 .bento-box.large {
@@ -308,15 +307,20 @@ body {
   justify-content: space-between;
   align-items: stretch;
   padding: 20px;
-  background-color: #eaeaea; /* Optional: Background color for large box */
+  background-color: #fff; /* Optional: Background color for large box */
 }
 
 .news-section {
   flex: 1; /* Divide the large box into 3 equal sections */
   margin: 0 10px; /* Add spacing between sections */
-  padding: 10px;
-  border: 1px solid #ccc; /* Optional: Add a border for visibility */
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid #111111; /* Optional: Add a border for visibility */
   background-color: #fff; /* Optional: Background color for news sections */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  text-align: center; /* Center text inside */
 }
 
 .news-section h3 {
@@ -325,13 +329,14 @@ body {
 
 .news-section p {
   font-size: 14px;
-  color: #555;
+  color: black;
 }
 
 .news-section button {
   margin-top: 10px;
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: #fff;
+  border: 2px solid #111111;
   color: white;
   border: none;
   border-radius: 5px;
@@ -340,7 +345,7 @@ body {
 }
 
 .news-section button:hover {
-  background-color: #0056b3;
+  background-color: #eaeaea;
 }
 
 .bento-box img {
@@ -351,13 +356,14 @@ body {
 
 .bento-box button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #111111;
+  color: #111111;
+  border-radius: 10px;
   cursor: pointer;
+  transition: ease 0.3s;
 }
 
 .bento-box button:hover {
-  background-color: #0056b3;
+  background-color: #007bff;
 }
