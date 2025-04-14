@@ -252,7 +252,6 @@ body {
 }
 
 .content-wrapper{
-  margin-left: 270px;
   transition: all 0.4s ease;
 }
 
@@ -266,7 +265,7 @@ body {
   align-items: center;
   height: 100vh; /* Full viewport height */
   position: relative;
-  width: 500vw;
+  width: 300vw;
   align-items: center;
   justify-content: start;
 }
@@ -275,4 +274,50 @@ body {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background for better visibility */
   padding: 20px; /* Optional: Add some padding */
+}
+
+.hero, .courses{
+  width: 97vw;
+  margin-right: 3vw;
+}
+
+.bento-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  width: 100vw;
+  height: 100vh;
+}
+
+.bento-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc; /* Optional: Add a border for visibility */
+  padding: 20px;
+  text-align: center;
+}
+
+.bento-box h2 {
+  margin-bottom: 10px;
+}
+
+.bento-box img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.bento-box button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bento-box button:hover {
+  background-color: #0056b3;
 }
