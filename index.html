@@ -67,12 +67,12 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#cv" class="nav-link">
               <span class="material-symbols-rounded">docs</span>
               <span class="nav-label">Curriculum Vitae</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="nav-item"><a class="nav-link dropdown-title">Extensions</a></li>
+              <li class="nav-item"><a class="nav-link dropdown-title">Curriculum Vitae</a></li>
             </ul>
           </li>
         </ul>
@@ -94,7 +94,7 @@
 
     <div class="content-wrapper">
       <div class="hero" id="hero">
-        <img src="./img/hero2.png" alt="hero section picture" style="width: 100vw; height: 100vh;">
+        <img src="./img/hero2.png" alt="hero section picture" style="width: 100%; height: auto  ;">
       </div>
       <div class="courses" id="courses">
         <div class="contentinnerwrapper">
@@ -138,10 +138,36 @@
         </div>
       </div>
       <div class="cv" id="cv">
-        
+        <div class="cv-container">
+          <!-- Left Section -->
+          <div class="cv-left">
+            <h2>About Me</h2>
+            <p>
+              I am a passionate programmer with experience in web development, mobile apps, and cloud solutions. I enjoy solving complex problems and creating innovative solutions that make an impact. Some of my key achievements include:
+            </p>
+            <ul>
+              <li>Developed a personal website to showcase my portfolio.</li>
+              <li>Built a mobile app for task management with over 1,000 downloads.</li>
+              <li>Contributed to open-source projects on GitHub.</li>
+            </ul>
+          </div>
+
+          <!-- Right Section -->
+          <div class="cv-right">
+            <h2>Connect with Me</h2>
+            <ul class="social-media">
+              <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+              <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+              <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+            </ul>
+            <a href="./files/your_cv.pdf" download>
+              <button class="download-cv-button">Download My CV</button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-
+    
     <!-- Script -->
     <script src="./js/script.js"></script>
   </body>
