@@ -272,7 +272,7 @@ body {
   align-items: center;
   height: 100vh; /* Full viewport height */
   position: relative;
-  width: 300vw;
+  width: 400vw;
   align-items: center;
   justify-content: start;
   background-color: #fff;
@@ -490,4 +490,60 @@ body {
   background-color: #007bff; /* Change background color on hover */
   color: #111111; /* Change text color on hover */
   filter: drop-shadow(5px 5px #111111);
+}
+
+.merch {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  text-align: center;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.merch-container {
+  max-width: 1200px;
+  width: 100%; /* Ensure it spans the full width of the section */
+  height: 100%; /* Ensure it spans the full height of the section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between tiles */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 100%; /* Full width of the container */
+  height: auto; /* Adjust height based on content */
+}
+
+.merch-tile {
+  flex: 1 1 calc(50% - 20px); /* Two tiles per row with spacing */
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.merch-tile img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.merch-tile p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
 }
