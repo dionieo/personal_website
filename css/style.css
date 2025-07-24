@@ -561,3 +561,13 @@ body {
   align-items: center;
   background-color: #f9f9f9; /* Light background for contrast */
 }
+
+.fotoposter{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
